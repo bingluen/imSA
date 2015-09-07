@@ -1,4 +1,12 @@
 body{
 	font-family: 微軟正黑體;
-	margin:15px;
+	margin:30px;
+}
+
+.search-blank{
+	width:20% !important;
+}
+
+.content{
+	margin-top:20px;
 }
