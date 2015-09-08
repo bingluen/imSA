@@ -1,0 +1,42 @@
+{
+	"data": [
+		{
+			"name": "麥當勞",
+			"category": "葷食",
+			"tel": "01234567",
+			"address": "環中東路",
+			"price": {
+				"upper": 200,
+				"lower": 15
+			},
+			"photo": ["1.jpg", "2.jpg"],
+			"coment": "店員很親切"
+		},
+
+		{
+			"name": "麥當勞2",
+			"category": "葷食",
+			"tel": "01234567",
+			"address": "環中東路",
+			"price": {
+				"upper": 200,
+				"lower": 15
+			},
+			"photo": ["1.jpg", "2.jpg"],
+			"coment": "店員很親切"
+		},
+
+		{
+			"name": "麥當勞3",
+			"category": "葷食",
+			"tel": "01234567",
+			"address": "環中東路",
+			"price": {
+				"upper": 200,
+				"lower": 15
+			},
+			"photo": ["1.jpg", "2.jpg"],
+			"coment": "店員很親切"
+		},
+	]
+}
