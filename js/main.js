@@ -1,22 +1,23 @@
 var Root = React.createClass({
 	render: function() {
-		console.log(this.state.result)
+		if(!this.state.database) return null;
 		return (
 			<div>
 				<div className="panel panel-default">
-			  		<div className="panel-body">
-			    		<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
-			  		</div>
+					<div className="panel-body">
+				   		<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
+					</div>
 				</div>
 
 				<form onSubmit={this.handleSearch}>
 					<div className="form-inline">
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
-				  		<button className="btn btn-primary search-btn" type="submit">查詢</button>
-			  		</div>
+					  	<button className="btn btn-primary search-btn" type="submit">查詢</button>
+				  	</div>
 				</form>
 
-				<SearchResult result={this.state.result} />				
+				<SearchResult result={this.state.result} />		
+
 			</div>
 		);
 	},
@@ -31,15 +32,19 @@ var Root = React.createClass({
 			dataType: 'json',
 		})
 		.done(function(data){
-			database = data;
-		})
-		return ({database: database, result: database});
+			this.setState({database: data, result: data.data})
+		}.bind(this))
+		.fail(function(error) {
+		} )
+		return ({});
 	},
 
-	handleSearch: function(){
+	handleSearch: function(e){
+		e.preventDefault();
 		$('#search-keyword').val();
 		var searchResult = this.state.database.data.filter(function(element) {
-			return element.indexOf($('#search-keyword').val()) > -1
+			console.log(element)
+			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
 	}	
@@ -64,6 +69,7 @@ var SearchResult = React.createClass({
 				if( element.tag == "all") return true;
 				return item.category == element.name;
 			});
+			return element;
 		}.bind(this))
 
 		var tabNav = category.map(function(element, index) {
@@ -74,7 +80,7 @@ var SearchResult = React.createClass({
 		})
 
 		var resultTable = category.map(function(element, index) {
-			return <ResultTable key={index} active={index == 0 ? true : false} id={element.name} data={element.data}/>
+			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data}/>
 		})
 
 		return (
@@ -93,7 +99,7 @@ var SearchResult = React.createClass({
 
 ResultTable = React.createClass({
 	render: function() {
-
+		
 		var rows = this.props.data.map(function(element,index){
 			return (
 				<tr key={index}>
@@ -118,27 +124,9 @@ ResultTable = React.createClass({
 							<th>價位</th>
 						</tr>
 					</thead>
-					<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
+					<tbody>
+						{rows}
+					</tbody>
 				</table>
 			</div>
 		)
