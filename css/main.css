@@ -3,8 +3,14 @@ body{
 	margin:30px;
 }
 
-.search-blank{
-	width:20% !important;
+.search-btn{
+	margin-left:10px;
+}
+
+@media screen and (max-width:767px) {
+	.search-btn{
+		margin-left:0px;
+	}
 }
 
 .content{
