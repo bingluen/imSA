@@ -1,22 +1,47 @@
 var Root = React.createClass({
 	render: function() {
-		console.log(this.state.result)
+		if(!this.state.database) return null;
 		return (
 			<div>
+
 				<div className="panel panel-default">
-			  		<div className="panel-body">
-			    		<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
-			  		</div>
+					<div className="panel-body">
+					   	<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
+					</div>
 				</div>
 
 				<form onSubmit={this.handleSearch}>
 					<div className="form-inline">
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
-				  		<button className="btn btn-primary search-btn" type="submit">查詢</button>
-			  		</div>
-				</form>
+						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="Tooltip on right">查詢</button>
+					</div>
+				</form>		
 
-				<SearchResult result={this.state.result} />				
+				<SearchResult result={this.state.result} />
+
+				<div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  	<div className="modal-dialog">
+					    <div className="modal-content">
+					      	<div className="modal-header">
+						        <h4 className="modal-title" id="myModalLabel"><strong>關於作者</strong></h4>
+					   		</div>
+						    <div className="modal-body">
+						        <h4>應芝曦 <small>Jhihsi Ying</small></h4>
+						        元智大學 102級資訊管理系學生<br />
+						        e-mail: jhihsiying@gmail.com
+						    </div>
+						    <div className="modal-footer">						    	
+						    	<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+						    </div>
+					    </div>
+				 	</div>
+				</div>
+
+				<div className="footer">
+					<hr />
+					Copyright &copy; 2015 <a href="#myModal" role="button" data-toggle="modal" id="about-text">Jhihsi Ying</a>, All Rights Reserved.
+				</div>				
+
 			</div>
 		);
 	},
@@ -31,17 +56,24 @@ var Root = React.createClass({
 			dataType: 'json',
 		})
 		.done(function(data){
-			database = data;
-		})
-		return ({database: database, result: database});
+			this.setState({database: data, result: data.data})
+		}.bind(this))
+		.fail(function(error) {
+		} )
+		return ({});
 	},
 
-	handleSearch: function(){
+	handleSearch: function(e){
+		e.preventDefault();
 		$('#search-keyword').val();
 		var searchResult = this.state.database.data.filter(function(element) {
-			return element.indexOf($('#search-keyword').val()) > -1
+			console.log(element)
+			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
+	},
+
+	componentDidMount: function(){
 	}	
 })
 
@@ -64,6 +96,7 @@ var SearchResult = React.createClass({
 				if( element.tag == "all") return true;
 				return item.category == element.name;
 			});
+			return element;
 		}.bind(this))
 
 		var tabNav = category.map(function(element, index) {
@@ -74,7 +107,7 @@ var SearchResult = React.createClass({
 		})
 
 		var resultTable = category.map(function(element, index) {
-			return <ResultTable key={index} active={index == 0 ? true : false} id={element.name} data={element.data}/>
+			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data}/>
 		})
 
 		return (
@@ -93,7 +126,7 @@ var SearchResult = React.createClass({
 
 ResultTable = React.createClass({
 	render: function() {
-
+		
 		var rows = this.props.data.map(function(element,index){
 			return (
 				<tr key={index}>
@@ -118,27 +151,9 @@ ResultTable = React.createClass({
 							<th>價位</th>
 						</tr>
 					</thead>
-					<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
+					<tbody>
+						{rows}
+					</tbody>
 				</table>
 			</div>
 		)

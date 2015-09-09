@@ -1,6 +1,7 @@
 body{
 	font-family: 微軟正黑體;
 	margin:30px;
+	height:100%;
 }
 
 .search-btn{
@@ -15,4 +16,36 @@ body{
 
 .content{
 	margin-top:20px;
+}
+
+.footer{
+	position: relative;
+	margin-top:50px;
+	height: 50px;
+	width: 100%;
+}
+
+/*modal置中*/
+.modal {
+  	text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  	display: inline-block;
+  	text-align: left;
+}
+
+/*modal背景透明*/
+.modal-backdrop
+{
+    opacity:0.65 !important;
 }
