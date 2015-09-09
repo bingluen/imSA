@@ -3,20 +3,44 @@ var Root = React.createClass({
 		if(!this.state.database) return null;
 		return (
 			<div>
+
 				<div className="panel panel-default">
 					<div className="panel-body">
-				   		<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
+					   	<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
 					</div>
 				</div>
 
 				<form onSubmit={this.handleSearch}>
 					<div className="form-inline">
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
-					  	<button className="btn btn-primary search-btn" type="submit">查詢</button>
-				  	</div>
-				</form>
+						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="Tooltip on right">查詢</button>
+					</div>
+				</form>		
 
-				<SearchResult result={this.state.result} />		
+				<SearchResult result={this.state.result} />
+
+				<div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  	<div className="modal-dialog">
+					    <div className="modal-content">
+					      	<div className="modal-header">
+						        <h4 className="modal-title" id="myModalLabel"><strong>關於作者</strong></h4>
+					   		</div>
+						    <div className="modal-body">
+						        <h4>應芝曦 <small>Jhihsi Ying</small></h4>
+						        元智大學 102級資訊管理系學生<br />
+						        e-mail: jhihsiying@gmail.com
+						    </div>
+						    <div className="modal-footer">						    	
+						    	<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+						    </div>
+					    </div>
+				 	</div>
+				</div>
+
+				<div className="footer">
+					<hr />
+					Copyright &copy; 2015 <a href="#myModal" role="button" data-toggle="modal" id="about-text">Jhihsi Ying</a>, All Rights Reserved.
+				</div>				
 
 			</div>
 		);
@@ -47,6 +71,9 @@ var Root = React.createClass({
 			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
+	},
+
+	componentDidMount: function(){
 	}	
 })
 
