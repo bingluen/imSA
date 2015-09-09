@@ -13,7 +13,7 @@ var Root = React.createClass({
 				<form onSubmit={this.handleSearch}>
 					<div className="form-inline">
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
-						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="Tooltip on right">查詢</button>
+						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
 					</div>
 				</form>		
 
@@ -73,7 +73,8 @@ var Root = React.createClass({
 		this.setState({result: searchResult})
 	},
 
-	componentDidMount: function(){
+	componentDidUpdate: function(){
+		$('[data-toggle="tooltip"]').tooltip()
 	}	
 })
 
