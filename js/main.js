@@ -12,7 +12,7 @@ var Root = React.createClass({
 
 				<form onSubmit={this.handleSearch}>
 					<div className="form-inline">
-						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
+						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)" />
 						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
 					</div>
 				</form>
@@ -182,11 +182,11 @@ ResultTable = React.createClass({
 				<table className="table table-striped">
 					<thead>
 						<tr>
-							<th>店名</th>
-							<th>種類</th>
-							<th>電話</th>
-							<th>地址</th>
-							<th>價位</th>
+							<th className="tableName">店名</th>
+							<th className="tableCategory">種類</th>
+							<th ckassName="tableTel">電話</th>
+							<th className="tableAddress">地址</th>
+							<th className="tablePrice">價位</th>
 						</tr>
 					</thead>
 					<tbody>

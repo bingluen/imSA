@@ -18,6 +18,23 @@ body{
 	margin-top:20px;
 }
 
+/*table欄位寬度*/
+.tableName{
+	width:15%;
+}
+.tableCategory{
+	width:10%;
+}
+.tableTel{
+	width:15%
+}
+.tableAdress{
+	width:50%;
+}
+.tablePrice{
+	width:10%
+}
+
 .footer{
 	position: relative;
 	margin-top:50px;
