@@ -15,7 +15,7 @@ var Root = React.createClass({
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
 						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
 					</div>
-				</form>		
+				</form>
 
 				<SearchResult result={this.state.result} />
 
@@ -30,7 +30,7 @@ var Root = React.createClass({
 						        元智大學 102級資訊管理系學生<br />
 						        e-mail: jhihsiying@gmail.com
 						    </div>
-						    <div className="modal-footer">						    	
+						    <div className="modal-footer">
 						    	<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
 						    </div>
 					    </div>
@@ -40,7 +40,7 @@ var Root = React.createClass({
 				<div className="footer">
 					<hr />
 					Copyright &copy; 2015 <a href="#myModal" role="button" data-toggle="modal" id="about-text">Jhihsi Ying</a>, All Rights Reserved.
-				</div>				
+				</div>
 
 			</div>
 		);
@@ -75,7 +75,7 @@ var Root = React.createClass({
 
 	componentDidUpdate: function(){
 		$('[data-toggle="tooltip"]').tooltip()
-	}	
+	}
 })
 
 var SearchResult = React.createClass({
@@ -98,7 +98,6 @@ var SearchResult = React.createClass({
 			});
 			return element;
 		}.bind(this))
-
 		return category;
 	},
 	getInitialState: function(){
@@ -109,27 +108,27 @@ var SearchResult = React.createClass({
 	},
 
 	handlePrevious: function() {
-		console.log(handlePrevious)
+		console.log('handlePrevious')
 		if(this.state.pages > 1)
 			this.setState({pages: this.state.pages - 1});
 	},
 	handleNext: function() {
-		console.log(handleNext)
 		//if(this.state.pages < Math.ceil())
-		length = this.props.result.filter(function(element) {
+		length = this.state.result.filter(function(element) {
 			return element.tag == $('.tab-pane.fade.active.in').attr('id');
-		}).frist().data.legnth;
-		if(this.state.pages < Math.ceil(legnth / 10))
+		})[0].data.length;
+		if(this.state.pages < Math.ceil(length / 10))
 			this.setState({pages: this.state.pages + 1});
 	},
 
 	render: function() {
-		
 		var pages = this.state.result.map(function(element) {
-			element.data = element.data.filter(function(element,index) {
+			data = {};
+			$.extend(data, element);
+			data.data = element.data.filter(function(element,index) {
 				return index >= (this.state.pages - 1) * 10 && index < this.state.pages * 10;
 			}.bind(this));
-			return element;
+			return data;
 		}.bind(this))
 
 		var tabNav = this.state.result.map(function(element, index) {
@@ -159,13 +158,13 @@ var SearchResult = React.createClass({
 					</nav>
 				</div>
 			</div>
-		)		
+		)
 	}
 })
 
 ResultTable = React.createClass({
 	render: function() {
-		
+
 		var rows = this.props.data.map(function(element,index){
 			return (
 				<tr key={index}>
