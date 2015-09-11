@@ -107,20 +107,6 @@ var SearchResult = React.createClass({
 		this.setState({result: this.classifyResult(nextProps.result)});
 	},
 
-	handlePrevious: function() {
-		console.log('handlePrevious')
-		if(this.state.pages > 1)
-			this.setState({pages: this.state.pages - 1});
-	},
-	handleNext: function() {
-		//if(this.state.pages < Math.ceil())
-		length = this.state.result.filter(function(element) {
-			return element.tag == $('.tab-pane.fade.active.in').attr('id');
-		})[0].data.length;
-		if(this.state.pages < Math.ceil(length / 10))
-			this.setState({pages: this.state.pages + 1});
-	},
-
 	render: function() {
 		var pages = this.state.result.map(function(element) {
 			data = {};
@@ -152,13 +138,27 @@ var SearchResult = React.createClass({
 					{resultTable}
 					<nav>
 					  	<ul className="pager">
-					    	<li><a href="#" onClick={this.handlePrevious}>←</a></li>
-					    	<li><a href="#" onClick={this.handleNext}>→</a></li>
+					    	<li><a href="#" onClick={this.handlePrevious}>← 上一頁</a></li>　
+					    	<li><a href="#" onClick={this.handleNext}>下一頁 →</a></li>
 					  	</ul>
 					</nav>
 				</div>
 			</div>
 		)
+	},
+
+	handlePrevious: function() {
+		console.log('handlePrevious')
+		if(this.state.pages > 1)
+			this.setState({pages: this.state.pages - 1});
+	},
+	handleNext: function() {
+		//if(this.state.pages < Math.ceil())
+		length = this.state.result.filter(function(element) {
+			return element.tag == $('.tab-pane.fade.active.in').attr('id');
+		})[0].data.length;
+		if(this.state.pages < Math.ceil(length / 10))
+			this.setState({pages: this.state.pages + 1});
 	}
 })
 
