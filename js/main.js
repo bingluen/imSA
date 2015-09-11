@@ -79,8 +79,7 @@ var Root = React.createClass({
 })
 
 var SearchResult = React.createClass({
-	render: function() {
-
+	classifyResult: function(result) {
 		var category = [
 			{name: "全部展開", tag:"all"},
 			{name: "葷食", tag: "mfood"},
@@ -93,22 +92,55 @@ var SearchResult = React.createClass({
 		]
 
 		category = category.map(function(element) {
-			element.data = this.props.result.filter(function(item) {
+			element.data = result.filter(function(item) {
 				if( element.tag == "all") return true;
 				return item.category == element.name;
 			});
 			return element;
 		}.bind(this))
 
-		var tabNav = category.map(function(element, index) {
+		return category;
+	},
+	getInitialState: function(){
+		return ({pages:1, result: this.classifyResult(this.props.result)});
+	},
+	completeWillReceiveProps: function(nextProps) {
+		this.setState({result: this.classifyResult(nextProps.result)});
+	},
+
+	handlePrevious: function() {
+		console.log(handlePrevious)
+		if(this.state.pages > 1)
+			this.setState({pages: this.state.pages - 1});
+	},
+	handleNext: function() {
+		console.log(handleNext)
+		//if(this.state.pages < Math.ceil())
+		length = this.props.result.filter(function(element) {
+			return element.tag == $('.tab-pane.fade.active.in').attr('id');
+		}).frist().data.legnth;
+		if(this.state.pages < Math.ceil(legnth / 10))
+			this.setState({pages: this.state.pages + 1});
+	},
+
+	render: function() {
+		
+		var pages = this.state.result.map(function(element) {
+			element.data = element.data.filter(function(element,index) {
+				return index >= (this.state.pages - 1) * 10 && index < this.state.pages * 10;
+			}.bind(this));
+			return element;
+		}.bind(this))
+
+		var tabNav = this.state.result.map(function(element, index) {
 			if (index == 0)
 				return <li key={index} className="active"><a href={ '#' + element.tag} data-toggle="tab">{element.name}</a></li>
 			else
 				return <li key={index}><a href={ '#' + element.tag} data-toggle="tab">{element.name}</a></li>
 		})
 
-		var resultTable = category.map(function(element, index) {
-			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data}/>
+		var resultTable = pages.map(function(element, index) {
+			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data} />
 		})
 
 		return (
@@ -119,6 +151,12 @@ var SearchResult = React.createClass({
 
 				<div className="tab-content">
 					{resultTable}
+					<nav>
+					  	<ul className="pager">
+					    	<li><a href="#" onClick={this.handlePrevious}>←</a></li>
+					    	<li><a href="#" onClick={this.handleNext}>→</a></li>
+					  	</ul>
+					</nav>
 				</div>
 			</div>
 		)		
