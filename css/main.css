@@ -8,14 +8,12 @@ body{
 	margin-left:10px;
 }
 
-@media screen and (max-width:767px) {
-	.search-btn{
-		margin-left:0px;
-	}
-}
-
 .content{
 	margin-top:20px;
+}
+
+#search-input {
+	width: 300px;
 }
 
 /*table欄位寬度*/
@@ -60,7 +58,24 @@ body{
 }
 
 /*modal背景透明*/
-.modal-backdrop
-{
+.modal-backdrop {
     opacity:0.65 !important;
+}
+
+@media screen and (max-width:767px) {
+	.search-btn{
+		margin-left:0px;
+	}
+	body {
+		margin: 10px;
+	}
+	.panel-body {
+		padding: 5px 5px;
+	}
+	#search-input {
+		width: 100%;
+	}
+	.footer {
+		text-align: center;
+	}
 }
