@@ -67,10 +67,10 @@ var Root = React.createClass({
 		e.preventDefault();
 		$('#search-keyword').val();
 		var searchResult = this.state.database.data.filter(function(element) {
-			console.log(element)
 			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
+		console.log(searchResult)
 	},
 
 	componentDidUpdate: function(){
@@ -148,7 +148,6 @@ var SearchResult = React.createClass({
 	},
 
 	handlePrevious: function() {
-		console.log('handlePrevious')
 		if(this.state.pages > 1)
 			this.setState({pages: this.state.pages - 1});
 	},
