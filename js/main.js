@@ -11,11 +11,11 @@ var Root = React.createClass({
 				</div>
 
 				<form onSubmit={this.handleSearch}>
-
 					<div className="input-group" id="search-input">
 						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)"/>
 						<span className="input-group-btn">
-							<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
+							<button className="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="top" title="在下方建立篩選">查詢</button>
+							<button className="btn btn-success" onClick={this.cleanSearch}>全部列出</button>
 						</span>
 					</div>
 				</form>
@@ -58,8 +58,8 @@ var Root = React.createClass({
 			type: 'get',
 			dataType: 'json',
 		})
-		.done(function(data){
-			this.setState({database: data, result: data.data})
+		.done(function(response){
+			this.setState({database: response, result: response.data})
 		}.bind(this))
 		.fail(function(error) {
 		} )
@@ -73,6 +73,11 @@ var Root = React.createClass({
 			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
+	},
+
+	cleanSearch: function(e){
+		e.preventDefault();		
+		this.setState({result: this.state.database.data})	
 	},
 
 	componentDidUpdate: function(){
