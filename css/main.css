@@ -8,14 +8,29 @@ body{
 	margin-left:10px;
 }
 
-@media screen and (max-width:767px) {
-	.search-btn{
-		margin-left:0px;
-	}
-}
-
 .content{
 	margin-top:20px;
+}
+
+#search-input {
+	width: 300px;
+}
+
+/*table欄位寬度*/
+.tableName{
+	width:15%;
+}
+.tableCategory{
+	width:10%;
+}
+.tableTel{
+	width:15%
+}
+.tableAdress{
+	width:50%;
+}
+.tablePrice{
+	width:10%
 }
 
 .footer{
@@ -30,13 +45,11 @@ body{
   	text-align: center;
 }
 
-@media screen and (min-width: 768px) { 
-  .modal:before {
+.modal:before {
     display: inline-block;
     vertical-align: middle;
     content: " ";
     height: 100%;
-  }
 }
 
 .modal-dialog {
@@ -45,7 +58,24 @@ body{
 }
 
 /*modal背景透明*/
-.modal-backdrop
-{
+.modal-backdrop {
     opacity:0.65 !important;
+}
+
+@media screen and (max-width:767px) {
+	.search-btn{
+		margin-left:0px;
+	}
+	body {
+		margin: 10px;
+	}
+	.panel-body {
+		padding: 5px 5px;
+	}
+	#search-input {
+		width: 100%;
+	}
+	.footer {
+		text-align: center;
+	}
 }

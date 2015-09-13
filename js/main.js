@@ -4,16 +4,19 @@ var Root = React.createClass({
 		return (
 			<div>
 
-				<div className="panel panel-default">
+				<div className="panel panel-default" id="main-panel">
 					<div className="panel-body">
 					   	<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
 					</div>
 				</div>
 
 				<form onSubmit={this.handleSearch}>
-					<div className="form-inline">
-						<input id="search-keyword" className="form-control" placeholder="請輸入店名..." />
-						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
+
+					<div className="input-group" id="search-input">
+						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)"/>
+						<span className="input-group-btn">
+							<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
+						</span>
 					</div>
 				</form>
 
@@ -67,10 +70,10 @@ var Root = React.createClass({
 		e.preventDefault();
 		$('#search-keyword').val();
 		var searchResult = this.state.database.data.filter(function(element) {
-			console.log(element)
 			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
+		console.log(searchResult)
 	},
 
 	componentDidUpdate: function(){
@@ -107,20 +110,6 @@ var SearchResult = React.createClass({
 		this.setState({result: this.classifyResult(nextProps.result)});
 	},
 
-	handlePrevious: function() {
-		console.log('handlePrevious')
-		if(this.state.pages > 1)
-			this.setState({pages: this.state.pages - 1});
-	},
-	handleNext: function() {
-		//if(this.state.pages < Math.ceil())
-		length = this.state.result.filter(function(element) {
-			return element.tag == $('.tab-pane.fade.active.in').attr('id');
-		})[0].data.length;
-		if(this.state.pages < Math.ceil(length / 10))
-			this.setState({pages: this.state.pages + 1});
-	},
-
 	render: function() {
 		var pages = this.state.result.map(function(element) {
 			data = {};
@@ -152,13 +141,26 @@ var SearchResult = React.createClass({
 					{resultTable}
 					<nav>
 					  	<ul className="pager">
-					    	<li><a href="#" onClick={this.handlePrevious}>←</a></li>
-					    	<li><a href="#" onClick={this.handleNext}>→</a></li>
+					    	<li><a href="#" onClick={this.handlePrevious}>← 上一頁</a></li>　
+					    	<li><a href="#" onClick={this.handleNext}>下一頁 →</a></li>
 					  	</ul>
 					</nav>
 				</div>
 			</div>
 		)
+	},
+
+	handlePrevious: function() {
+		if(this.state.pages > 1)
+			this.setState({pages: this.state.pages - 1});
+	},
+	handleNext: function() {
+		//if(this.state.pages < Math.ceil())
+		length = this.state.result.filter(function(element) {
+			return element.tag == $('.tab-pane.fade.active.in').attr('id');
+		})[0].data.length;
+		if(this.state.pages < Math.ceil(length / 10))
+			this.setState({pages: this.state.pages + 1});
 	}
 })
 
@@ -182,11 +184,11 @@ ResultTable = React.createClass({
 				<table className="table table-striped">
 					<thead>
 						<tr>
-							<th>店名</th>
-							<th>種類</th>
-							<th>電話</th>
-							<th>地址</th>
-							<th>價位</th>
+							<th className="tableName">店名</th>
+							<th className="tableCategory">種類</th>
+							<th ckassName="tableTel">電話</th>
+							<th className="tableAddress">地址</th>
+							<th className="tablePrice">價位</th>
 						</tr>
 					</thead>
 					<tbody>
