@@ -4,16 +4,19 @@ var Root = React.createClass({
 		return (
 			<div>
 
-				<div className="panel panel-default">
+				<div className="panel panel-default" id="main-panel">
 					<div className="panel-body">
 					   	<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
 					</div>
 				</div>
 
 				<form onSubmit={this.handleSearch}>
-					<div className="form-inline">
-						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)" />
-						<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
+
+					<div className="input-group" id="search-input">
+						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)"/>
+						<span className="input-group-btn">
+							<button className="btn btn-primary search-btn" type="submit" data-toggle="tooltip" data-placement="right" title="在下方建立篩選">查詢</button>
+						</span>
 					</div>
 				</form>
 
