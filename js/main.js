@@ -12,7 +12,7 @@ var Root = React.createClass({
 
 				<form onSubmit={this.handleSearch}>
 					<div className="input-group" id="search-input">
-						<input id="search-keyword" className="form-control" placeholder="請輸入店名...(一字可查)"/>
+						<input id="search-keyword" className="form-control" placeholder="請輸入至少一字店名..."/>
 						<span className="input-group-btn">
 							<button className="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="top" title="在下方建立篩選">查詢</button>
 							<button className="btn btn-success" onClick={this.cleanSearch}>全部列出</button>
@@ -76,7 +76,8 @@ var Root = React.createClass({
 	},
 
 	cleanSearch: function(e){
-		e.preventDefault();		
+		e.preventDefault();	
+		$('#search-keyword').val("")
 		this.setState({result: this.state.database.data})	
 	},
 
