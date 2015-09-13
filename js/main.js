@@ -1,5 +1,8 @@
 var Root = React.createClass({
 	render: function() {
+		var handleSearch = function() {
+
+		}
 		if(!this.state.database) return null;
 		return (
 			<div>
@@ -20,7 +23,7 @@ var Root = React.createClass({
 					</div>
 				</form>
 
-				<SearchResult result={this.state.result} />
+				<SearchResult result={this.state.result}/>
 
 				<div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  	<div className="modal-dialog">
@@ -78,18 +81,20 @@ var Root = React.createClass({
 	cleanSearch: function(e){
 		e.preventDefault();	
 		$('#search-keyword').val("")
-		this.setState({result: this.state.database.data})	
+		this.setState({result: this.state.database.data})
+
 	},
 
 	componentDidUpdate: function(){
 		$('[data-toggle="tooltip"]').tooltip()
 	}
+
 })
 
 var SearchResult = React.createClass({
 	classifyResult: function(result) {
 		var category = [
-			{name: "全部展開", tag:"all"},
+			{name: "全部列出", tag:"all"},
 			{name: "葷食", tag: "mfood"},
 			{name: "素食", tag: "vfood"},
 			{name: "衣", tag: "cloth"},
@@ -113,6 +118,8 @@ var SearchResult = React.createClass({
 	},
 	componentWillReceiveProps: function(nextProps) {
 		this.setState({result: this.classifyResult(nextProps.result)});
+		//reset tab label to all
+		$('#myTab > li').removeClass('active').first().addClass('active');
 	},
 
 	render: function() {
@@ -160,7 +167,6 @@ var SearchResult = React.createClass({
 			this.setState({pages: this.state.pages - 1});
 	},
 	handleNext: function() {
-		//if(this.state.pages < Math.ceil())
 		length = this.state.result.filter(function(element) {
 			return element.tag == $('.tab-pane.fade.active.in').attr('id');
 		})[0].data.length;
@@ -185,7 +191,7 @@ ResultTable = React.createClass({
 		})
 
 		return (
-			<div className={"tab-pane fade " + (this.props.active == true ? 'active in':'')} id={this.props.id}>
+			<div className="tab-pane fade " id={this.props.id} ref="tab">
 				<table className="table table-striped">
 					<thead>
 						<tr>
@@ -202,6 +208,19 @@ ResultTable = React.createClass({
 				</table>
 			</div>
 		)
+	},
+	componentDidUpdate: function() {
+		this.settingVisible();	
+	},
+	componentDidMount: function() {
+		this.settingVisible();
+	},
+	settingVisible: function() {
+		if(this.props.active) {
+			$(React.findDOMNode(this.refs.tab)).addClass('active in');
+		} else {
+			$(React.findDOMNode(this.refs.tab)).removeClass('active in');
+		}
 	}
 });
 
