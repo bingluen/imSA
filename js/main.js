@@ -73,7 +73,6 @@ var Root = React.createClass({
 			return element.name.indexOf($('#search-keyword').val()) > -1
 		});
 		this.setState({result: searchResult})
-		console.log(searchResult)
 	},
 
 	componentDidUpdate: function(){
@@ -106,7 +105,7 @@ var SearchResult = React.createClass({
 	getInitialState: function(){
 		return ({pages:1, result: this.classifyResult(this.props.result)});
 	},
-	completeWillReceiveProps: function(nextProps) {
+	componentWillReceiveProps: function(nextProps) {
 		this.setState({result: this.classifyResult(nextProps.result)});
 	},
 
