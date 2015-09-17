@@ -1,8 +1,5 @@
 var Root = React.createClass({
 	render: function() {
-		var handleSearch = function() {
-
-		}
 		if(!this.state.database) return null;
 		return (
 			<div>
@@ -63,6 +60,8 @@ var Root = React.createClass({
 		})
 		.done(function(response){
 			this.setState({database: response, result: response.data})
+			// 因為搜尋結果會一直用到改變的database，為不要動到母資料，所以另外複製一筆資料給result
+			// database裡面可能含有其他資訊，所以是整個response給它。這邊result只需要拿json檔裡的data屬性，所以response.data
 		}.bind(this))
 		.fail(function(error) {
 		} )
@@ -82,7 +81,6 @@ var Root = React.createClass({
 		e.preventDefault();	
 		$('#search-keyword').val("")
 		this.setState({result: this.state.database.data})
-
 	},
 
 	componentDidUpdate: function(){
@@ -105,10 +103,13 @@ var SearchResult = React.createClass({
 		]
 
 		category = category.map(function(element) {
-			element.data = result.filter(function(item) {
-				if( element.tag == "all") return true;
-				return item.category == element.name;
-			});
+			if(element.tag == 'all') 
+				element.data = result;
+			else {
+				element.data = result.filter(function(item) {
+					return item.category == element.name;
+				});
+			}			
 			return element;
 		}.bind(this))
 		return category;
@@ -119,6 +120,7 @@ var SearchResult = React.createClass({
 	componentWillReceiveProps: function(nextProps) {
 		this.setState({result: this.classifyResult(nextProps.result)});
 		//reset tab label to all
+		this.setState({pages:1}); //按下「全部列出」時回到第一頁
 		$('#myTab > li').removeClass('active').first().addClass('active');
 	},
 
