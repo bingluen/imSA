@@ -118,8 +118,7 @@ var SearchResult = React.createClass({
 		return ({pages:1, result: this.classifyResult(this.props.result)});
 	},
 	componentWillReceiveProps: function(nextProps) {
-		this.setState({result: this.classifyResult(nextProps.result)});
-		//reset tab label to all
+		this.setState({result: this.classifyResult(nextProps.result)}); //reset tab label to all
 		this.setState({pages:1}); //按下「全部列出」時回到第一頁
 		$('#myTab > li').removeClass('active').first().addClass('active');
 	},
@@ -142,8 +141,8 @@ var SearchResult = React.createClass({
 		})
 
 		var resultTable = pages.map(function(element, index) {
-			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data} />
-		})
+			return <ResultTable key={index} active={index == 0 ? true : false} id={element.tag} data={element.data} modalClick={this.showModal}/>
+		}.bind(this))
 
 		return (
 			<div className="content">
@@ -160,6 +159,27 @@ var SearchResult = React.createClass({
 					  	</ul>
 					</nav>
 				</div>
+				
+				<div className="modal fade" id="myModal_2" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div className="modal-dialog">
+						<div className="modal-content">
+							<div className="modal-header">
+								<h4 className="modal-title" id="myModalLabel">
+									<strong ref="title"></strong>
+								</h4>
+							</div>
+							<div className="modal-body">
+								<p>種類：<span ref="category"></span></p>
+								<p>電話：<span ref="tel"></span></p>								
+								<p>地址：<span ref="address"></span></p>
+								<p>價位：<span ref="priceLower"></span> ~ <span ref="priceUpper"></span></p>
+							</div>
+							<div className="modal-footer">
+								<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		)
 	},
@@ -174,23 +194,39 @@ var SearchResult = React.createClass({
 		})[0].data.length;
 		if(this.state.pages < Math.ceil(length / 10))
 			this.setState({pages: this.state.pages + 1});
+	},
+
+	/*利用jQuery把element寫入店家固定modal*/
+	showModal: function(element) {
+		$(React.findDOMNode(this.refs.title)).html(element.name);
+		$(React.findDOMNode(this.refs.category)).html(element.category);
+		$(React.findDOMNode(this.refs.tel)).html(element.tel);
+		$(React.findDOMNode(this.refs.address)).html(element.address);
+		$(React.findDOMNode(this.refs.priceLower)).html(element.price.lower);
+		$(React.findDOMNode(this.refs.priceUpper)).html(element.price.upper);
+		$('#myModal_2').modal('show');
 	}
 })
 
 ResultTable = React.createClass({
-	render: function() {
 
+	/*render裡的this.handleClick呼叫此function，此function再呼叫modalClick*/
+	handleClick: function(element) {
+		this.props.modalClick(element);
+	},
+
+	render: function() {
 		var rows = this.props.data.map(function(element,index){
-			return (
+			return (				
 				<tr key={index}>
-					<td>{element.name}</td>
+					<td><a href="#" onClick={this.handleClick.bind(this, element)}>{element.name}</a></td>
 					<td>{element.category}</td>
 					<td>{element.tel}</td>
 					<td>{element.address}</td>
 					<td>{element.price.lower} ~ {element.price.upper}</td>
 				</tr>
 			)
-		})
+		}.bind(this))
 
 		return (
 			<div className="tab-pane fade " id={this.props.id} ref="tab">

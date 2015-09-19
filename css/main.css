@@ -58,6 +58,11 @@ body{
     opacity:0.65 !important;
 }
 
+/*防止modal的內容overflow*/
+.modal-body {
+  word-wrap: break-word;
+}
+
 @media screen and (max-width:767px) {
 	.search-btn{
 		margin-left:0px;
@@ -74,4 +79,7 @@ body{
 	.footer {
 		text-align: center;
 	}
+	.modal-dialog {
+    	width: 80%;
+    }
 }
