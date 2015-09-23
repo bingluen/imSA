@@ -100,6 +100,8 @@ var SearchResult = React.createClass({
 			{name: "行", tag: "traffic"},
 			{name: "育", tag: "edu"},
 			{name: "樂", tag: "play"},
+			{name: "銀行", tag: "bank"},
+			{name: "綜合", tag: "comprehensive"},
 		]
 
 		category = category.map(function(element) {
@@ -169,10 +171,12 @@ var SearchResult = React.createClass({
 								</h4>
 							</div>
 							<div className="modal-body">
-								<p>種類：<span ref="category"></span></p>
-								<p>電話：<span ref="tel"></span></p>								
-								<p>地址：<span ref="address"></span></p>
-								<p>價位：<span ref="priceLower"></span> ~ <span ref="priceUpper"></span></p>
+								<p><span className="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 種類：<span ref="category"></span></p>								
+								<p><span className="glyphicon glyphicon-earphone" aria-hidden="true"></span> 電話：<span ref="tel"></span></p>													
+								<p><span className="glyphicon glyphicon-home" aria-hidden="true"></span> 地址：<span ref="address"></span></p>								
+								<p><span className="glyphicon glyphicon-usd" aria-hidden="true"></span> 價位：<span ref="averagePrice"></span></p>								
+								<p><span className="glyphicon glyphicon-edit" aria-hidden="true"></span> 備註：</p>
+								<p><span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 地圖：</p>
 							</div>
 							<div className="modal-footer">
 								<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
@@ -202,8 +206,7 @@ var SearchResult = React.createClass({
 		$(React.findDOMNode(this.refs.category)).html(element.category);
 		$(React.findDOMNode(this.refs.tel)).html(element.tel);
 		$(React.findDOMNode(this.refs.address)).html(element.address);
-		$(React.findDOMNode(this.refs.priceLower)).html(element.price.lower);
-		$(React.findDOMNode(this.refs.priceUpper)).html(element.price.upper);
+		$(React.findDOMNode(this.refs.averagePrice)).html(element.averagePrice);
 		$('#myModal_2').modal('show');
 	}
 })
@@ -222,8 +225,8 @@ ResultTable = React.createClass({
 					<td><a href="#" onClick={this.handleClick.bind(this, element)}>{element.name}</a></td>
 					<td>{element.category}</td>
 					<td>{element.tel}</td>
-					<td>{element.address}</td>
-					<td>{element.price.lower} ~ {element.price.upper}</td>
+					<td className="tableAddress">{element.address}</td>
+					<td className="tablePrice">{element.averagePrice}</td>
 				</tr>
 			)
 		}.bind(this))
