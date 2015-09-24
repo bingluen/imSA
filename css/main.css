@@ -4,10 +4,6 @@ body{
 	height:100%;
 }
 
-.search-btn{
-	margin-left:10px;
-}
-
 .content{
 	margin-top:20px;
 }
@@ -18,19 +14,19 @@ body{
 
 /*table欄位寬度*/
 .tableName{
-	width:15%;
+	width:20%;
 }
 .tableCategory{
 	width:10%;
 }
 .tableTel{
-	width:15%
+	width:20%
 }
-.tableAdress{
-	width:50%;
+.tableAddress{
+	width:30%;
 }
 .tablePrice{
-	width:10%
+	width:20%
 }
 
 .footer{
@@ -62,6 +58,11 @@ body{
     opacity:0.65 !important;
 }
 
+/*防止modal的內容overflow*/
+.modal-body {
+  word-wrap: break-word;
+}
+
 @media screen and (max-width:767px) {
 	.search-btn{
 		margin-left:0px;
@@ -77,5 +78,24 @@ body{
 	}
 	.footer {
 		text-align: center;
+	}
+	.modal-dialog {
+    	width: 80%;
+    }
+
+    .tableName{
+		width:40%;
+	}
+	.tableCategory{
+		width:20%;
+	}
+	.tableTel{
+		width:40%;
+	}
+	.tableAddress{
+		display: none;
+	}
+	.tablePrice{
+		display: none;
 	}
 }

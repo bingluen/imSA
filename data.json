@@ -1,532 +1,1084 @@
 {
 	"data": [
 		{
-			"name": "麥當勞1",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞2",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞3",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞4",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞5",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞6",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞7",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞8",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞9",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞10",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		},
-		{
-			"name": "麥當勞",
-			"category": "葷食",
-			"tel": "03 455 9117",
-			"address": "320桃園市中壢區環中東路301號",
-			"price": {
-				"upper": 200,
-				"lower": 17
-			},
-			"photo": ["1.jpg", "2.jpg"],
-			"coment": "店員很親切"
-		}
+	        "name": "梁媽媽手工水餃",
+	        "category": "葷食",
+	        "tel": "0910 387 607",
+	        "address": "桃園市中壢區興安一街6號",
+	        "averagePrice": "6~8元/顆",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "傑尼兔",
+	        "category": "葷食",
+	        "tel": "03 285 3330",
+	        "address": "桃園市中壢區興安一街12號",
+	        "averagePrice": "150元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "浯島漁夫粥",
+	        "category": "葷食",
+	        "tel": "03 435 0993",
+	        "address": "桃園市中壢區興安一街8巷15號",
+	        "averagePrice": "100元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "咖哩匠",
+	        "category": "葷食",
+	        "tel": "03 285 3221",
+	        "address": "桃園縣中壢市興仁路二段67巷16號",
+	        "averagePrice": "100元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "慕堤意廚",
+	        "category": "葷食",
+	        "tel": "03 462 6858",
+	        "address": "桃園市中壢市興仁路一段202號",
+	        "averagePrice": "150元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "史提克牛排",
+	        "category": "葷食",
+	        "tel": "03 452 0646",
+	        "address": "桃園市中壢區榮民路48號",
+	        "averagePrice": "400元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "柏林鐵板燒",
+	        "category": "葷食",
+	        "tel": "03 462 5570",
+	        "address": "桃園市中壢區強國路13號",
+	        "averagePrice": "200元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "陶憩食代",
+	        "category": "葷食",
+	        "tel": "03 463 9663",
+	        "address": "桃園市中壢區環中東路212號",
+	        "averagePrice": "300元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "潮肉",
+	        "category": "葷食",
+	        "tel": "03 451 3799",
+	        "address": "桃園市中壢區環中東路559號",
+	        "averagePrice": "439元(含服務費)",
+	        "photo": "",
+	        "coment": "吃到飽(加收10%服務費)"
+	    },
+	    {
+	        "name": "一畝田",
+	        "category": "葷食",
+	        "tel": "03 462 9781",
+	        "address": "桃園縣中壢市內壢忠孝路186號",
+	        "averagePrice": "60元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "肯德基",
+	        "category": "葷食",
+	        "tel": "03 455 9916",
+	        "address": "桃園市中壢區環中東路249號",
+	        "averagePrice": "200元",
+	        "photo": "",
+	        "coment": "得來速服務"
+	    },
+	    {
+	        "name": "Mr.May義式料理",
+	        "category": "葷食",
+	        "tel": "03 462 2790",
+	        "address": "桃園市中壢區環中東路626號",
+	        "averagePrice": "439元(含服務費)",
+	        "photo": "",
+	        "coment": "附設停車場/吃到飽(加收10%服務費)"
+	    },
+	    {
+	        "name": "NU PASTA",
+	        "category": "葷食",
+	        "tel": "03 455 6836",
+	        "address": "桃園市中壢司環中東路145號",
+	        "averagePrice": "150元",
+	        "photo": "",
+	        "coment": "低消80元"
+	    },
+	    {
+	        "name": "家樂福",
+	        "category": "樂",
+	        "tel": "03 452 6000",
+	        "address": "桃園市中壢區中華路一段450號",
+	        "averagePrice": "依消費決定",
+	        "photo": "",
+	        "coment": "大型賣場/附設停車場"
+	    },
+	    {
+	        "name": "必勝客",
+	        "category": "葷食",
+	        "tel": "03 433 3020",
+	        "address": "桃園市中壢區中華路一段350號",
+	        "averagePrice": "250元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 369 6978",
+	        "address": "桃園市八德區中華路575號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台亞石油",
+	        "category": "行",
+	        "tel": "03 463 9380",
+	        "address": "桃園市中壢區新中北路662號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 435 2496",
+	        "address": "桃園市中壢區環中東路346號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油直營中壢工二站",
+	        "category": "行",
+	        "tel": "03 462 0443",
+	        "address": "桃園市中壢區環中東路346號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "車容坊加油站",
+	        "category": "行",
+	        "tel": "03 462 6188",
+	        "address": "桃園市中壢區普忠路357號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 435 6060",
+	        "address": "桃園市中壢區環中東路675號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 433 5750",
+	        "address": "桃園市中壢區環中東路485號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 371 1338",
+	        "address": "桃園市八德區廣福路1355號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 375 3520",
+	        "address": "桃園市八德區廣福路946號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "西歐加油站",
+	        "category": "行",
+	        "tel": "03 217 0159",
+	        "address": "桃園市桃園區中山路1536號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 369 6978",
+	        "address": "桃園市八德區中華路575號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 435 2728",
+	        "address": "桃園市中壢區普忠路230號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台塑石油",
+	        "category": "行",
+	        "tel": "03 461 7618",
+	        "address": "桃園市中壢區中華路一段814號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 452 1948",
+	        "address": "桃園市中壢區中華路二段230號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "山隆加油站",
+	        "category": "行",
+	        "tel": "03 366 4565",
+	        "address": "桃園市八德區廣福路669號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 371 1338",
+	        "address": "桃園市八德區廣福路1355號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "統一精工-速邁樂",
+	        "category": "行",
+	        "tel": "03 455 8599",
+	        "address": "桃園市中壢區新中北路二段5號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "內壢火車站",
+	        "category": "行",
+	        "tel": "無",
+	        "address": "桃園市中壢區中原里中華路一段267號",
+	        "averagePrice": "因地制宜",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "樂食主義",
+	        "category": "葷食",
+	        "tel": "03 461 5286",
+	        "address": "桃園市中壢區普忠路407號",
+	        "averagePrice": "250元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "大番日式料理",
+	        "category": "葷食",
+	        "tel": "03 451 4853",
+	        "address": "桃園市普忠路407號",
+	        "averagePrice": "250元",
+	        "photo": "",
+	        "coment": "加收5%服務費"
+	    },
+	    {
+	        "name": "火車頭平價海鮮",
+	        "category": "葷食",
+	        "tel": "03 4630 890",
+	        "address": "桃園市中壢區新中北路773-3號",
+	        "averagePrice": "150元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "嚐嚐九九",
+	        "category": "葷食",
+	        "tel": "03 462 0899",
+	        "address": "桃園市中壢區環中東路567",
+	        "averagePrice": "99元/盤",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "霸味羊肉爐",
+	        "category": "葷食",
+	        "tel": "03 461 2839",
+	        "address": "桃園市中壢區環中東路589-1號",
+	        "averagePrice": "500元/鍋",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "香茅城GRASSTHAI泰式主題風味餐廳",
+	        "category": "葷食",
+	        "tel": "03 271 6479",
+	        "address": "桃園市中壢區環中東路618號",
+	        "averagePrice": "400元(含服務費)",
+	        "photo": "",
+	        "coment": "加收10%服務費"
+	    },
+	    {
+	        "name": "健康一番日式涮涮鍋",
+	        "category": "葷食",
+	        "tel": "03 453 5551",
+	        "address": "桃園市中壢區新中北路567號",
+	        "averagePrice": "439元(含清潔費)",
+	        "photo": "",
+	        "coment": "附設停車場/吃到飽(加收10%清潔費)"
+	    },
+	    {
+	        "name": "極鮮火鍋",
+	        "category": "葷食",
+	        "tel": "03 461 8799",
+	        "address": "桃園市中壢區環中東路585號",
+	        "averagePrice": "439元(含清潔費)",
+	        "photo": "",
+	        "coment": "吃到飽(加收10%清潔費)"
+	    },
+	    {
+	        "name": "泰鼎泰式料理",
+	        "category": "葷食",
+	        "tel": "03 456 3318",
+	        "address": "桃園市中壢區環中東路756號",
+	        "averagePrice": "528元(含服務費)",
+	        "photo": "",
+	        "coment": "附設停車場/特約商店打9折/加收10%服務費"
+	    },
+	    {
+	        "name": "凡諾奇義式麵食館",
+	        "category": "葷食",
+	        "tel": "03 461 3086",
+	        "address": "桃園市中壢區榮安十三街298號",
+	        "averagePrice": "150元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "左岸意廚風味坊",
+	        "category": "葷食",
+	        "tel": "03 461 0979",
+	        "address": "桃園市中壢區榮安13街310號",
+	        "averagePrice": "180元(排餐400元)",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "貴族世家",
+	        "category": "葷食",
+	        "tel": "03 451 1234",
+	        "address": "桃園市中壢區環中東路307號",
+	        "averagePrice": "300元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "每天麵食館",
+	        "category": "葷食",
+	        "tel": "03 463 8679",
+	        "address": "桃園市中壢區榮安十四街2-2號",
+	        "averagePrice": "100元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "千葉火鍋",
+	        "category": "葷食",
+	        "tel": "03 451 1995",
+	        "address": "桃園市中壢區環中東路267號",
+	        "averagePrice": "439(含清潔費)",
+	        "photo": "",
+	        "coment": "附設停車場/吃到飽(加收10%清潔費)"
+	    },
+	    {
+	        "name": "綠光花園",
+	        "category": "素食",
+	        "tel": "03 461 6077",
+	        "address": "桃園市中壢區環中東路651號",
+	        "averagePrice": "8000/桌",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "綠光花園",
+	        "category": "葷食",
+	        "tel": "03 461 6077",
+	        "address": "桃園市中壢區環中東路651號",
+	        "averagePrice": "8000/桌",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "鬍鬚張",
+	        "category": "葷食",
+	        "tel": "03 451 1995",
+	        "address": "桃園市中壢區環中東路247號",
+	        "averagePrice": "120元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "葉媽臭臭鍋",
+	        "category": "葷食",
+	        "tel": "03 462 7553",
+	        "address": "桃園市中壢區榮安一街389號",
+	        "averagePrice": "120元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "85度C咖啡蛋糕",
+	        "category": "葷食",
+	        "tel": "03 285 4792",
+	        "address": "桃園市中壢區環中東路192號",
+	        "averagePrice": "150元(大蛋糕650元)",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "拉亞漢堡",
+	        "category": "葷食",
+	        "tel": "03 433 1510",
+	        "address": "桃園市中壢區莊敬路801號",
+	        "averagePrice": "100元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "CO CO都可流行生活飲食",
+	        "category": "素食",
+	        "tel": "03 463 9913",
+	        "address": "桃園市中壢區環中東路204號",
+	        "averagePrice": "30元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣中油",
+	        "category": "行",
+	        "tel": "03 463 9368",
+	        "address": "桃園市中壢區新中北路779號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "內壢加油站股份有限公司",
+	        "category": "行",
+	        "tel": "03 435 2497",
+	        "address": "桃園市中壢市環中東路346號",
+	        "averagePrice": "時價",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "大魯閣棒壘球打擊場中壢館",
+	        "category": "樂",
+	        "tel": "03 461 0015",
+	        "address": "桃園市中壢區環中東路561號",
+	        "averagePrice": "200/6枚",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "大新莊棒壘球打擊場",
+	        "category": "樂",
+	        "tel": "03 461 3669",
+	        "address": "桃園市中壢區新中北路662號",
+	        "averagePrice": "500/5枚",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "亞運保齡球館",
+	        "category": "樂",
+	        "tel": "03 465 8722",
+	        "address": "桃園市中壢區仁德里仁美90之93號",
+	        "averagePrice": "70/局",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "興仁公園",
+	        "category": "樂",
+	        "tel": "無",
+	        "address": "桃園市中壢區興安一街",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "好樂迪KTV",
+	        "category": "樂",
+	        "tel": "03 427 6600",
+	        "address": "桃園市中壢區中美路二段",
+	        "averagePrice": "440/3hr",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "錢櫃",
+	        "category": "樂",
+	        "tel": "03 427 0606",
+	        "address": "桃園市中壢區中央東路88號",
+	        "averagePrice": "2480/1hr",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "桌弄",
+	        "category": "樂",
+	        "tel": "03 283 0916",
+	        "address": "桃園市中壢區大仁街50號",
+	        "averagePrice": "200/24hr",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "興仁國小",
+	        "category": "育",
+	        "tel": "03 435 5753",
+	        "address": "桃園市中壢區遠東路210 號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "桃園市立自強國民中學",
+	        "category": "育",
+	        "tel": "03 455 3494",
+	        "address": "桃園市中壢區榮民路80號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "永豐高中",
+	        "category": "育",
+	        "tel": "03 369 2679",
+	        "address": "桃園市八德永豐路609號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "私立新興高中",
+	        "category": "育",
+	        "tel": "03 379 6996",
+	        "address": "桃園市八德區永豐路563號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "內壢國小",
+	        "category": "育",
+	        "tel": "03 463 5888",
+	        "address": "桃園市中壢區福德路20號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "內壢高中",
+	        "category": "育",
+	        "tel": "03 452 8080",
+	        "address": "桃園市中壢成章四街 120 號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "自立國小",
+	        "category": "育",
+	        "tel": "03 455 9130",
+	        "address": "桃園市中壢永福路 1200 號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "私立自強幼稚園",
+	        "category": "育",
+	        "tel": "03 455 0756",
+	        "address": "桃園市中壢區環中東路16號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "中正國小",
+	        "category": "育",
+	        "tel": "03 455 9313",
+	        "address": "桃園市中壢區榮民路329號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "私立德明正美幼稚園",
+	        "category": "育",
+	        "tel": "03 455 6162",
+	        "address": "桃園市中壢區榮民路285巷24弄28號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "華勛國小",
+	        "category": "育",
+	        "tel": "03 466 1587",
+	        "address": "桃園市中壢區榮民南路205號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "茄苳國民小學",
+	        "category": "育",
+	        "tel": "03 361 1425",
+	        "address": "桃園市八德區永豐路155號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "桃園市立圖書館-內壢分館",
+	        "category": "育",
+	        "tel": "03 4556186",
+	        "address": "桃園市中壢區光華三街10號2、3樓",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "旦旦網資訊休閒館",
+	        "category": "樂",
+	        "tel": "無",
+	        "address": "桃園縣中壢市環中東路266號",
+	        "averagePrice": "35元/小時",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "義式美味素食",
+	        "category": "素食",
+	        "tel": "03 4553019",
+	        "address": "桃園區桃園縣中壢市中華路一段616號",
+	        "averagePrice": "100元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "松荷汽車旅館",
+	        "category": "住",
+	        "tel": "03 435 5373",
+	        "address": "台灣桃園縣中壢市成章三街91號",
+	        "averagePrice": "休息580元/3小時(住宿1580元)",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "儷星國際汽車旅館",
+	        "category": "住",
+	        "tel": "03 463 6666",
+	        "address": "桃園市中華路2段152號",
+	        "averagePrice": "休息1400元(住宿3800元)",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "台灣銀行",
+	        "category": "銀行",
+	        "tel": "03 461 8519",
+	        "address": "桃園市中壢區興農路125號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "聯邦商業銀行",
+	        "category": "銀行",
+	        "tel": "03 435 1288",
+	        "address": "桃園市中壢區中華路一段258號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "渣打國際商業銀行",
+	        "category": "銀行",
+	        "tel": "03 455 3122",
+	        "address": "桃園市中壢區信義路83號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "第一商業銀行",
+	        "category": "銀行",
+	        "tel": "03 455 2410",
+	        "address": "桃園市中壢區信義路117號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "永豐銀行",
+	        "category": "銀行",
+	        "tel": "03 462 6969",
+	        "address": "桃園市中壢區環中東路260號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "兆豐國際商業銀行",
+	        "category": "銀行",
+	        "tel": "03 426 2366",
+	        "address": "桃園市中壢區環北路406號",
+	        "averagePrice": "無",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "三媽臭臭鍋元智店",
+	        "category": "食",
+	        "tel": "03 285 0089",
+	        "address": "桃園市中壢區興仁路二段89號",
+	        "averagePrice": "120元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "清心福全 - 中壢中華店",
+	        "category": "食",
+	        "tel": "03 463 4223",
+	        "address": "桃園市中壢市中華路一段197號1樓",
+	        "averagePrice": "40元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "大苑子茶飲專賣店(內壢站前店)",
+	        "category": "食",
+	        "tel": "03 462 3833",
+	        "address": "桃園市中壢區忠孝路44號",
+	        "averagePrice": "30元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "清玉 - 內壢興仁店",
+	        "category": "食",
+	        "tel": "03-4332233",
+	        "address": "桃園縣中壢市興仁路二段",
+	        "averagePrice": "50元",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "味家香北平脆皮烤鴨 - 中壢中華店",
+	        "category": "食",
+	        "tel": "03-451-9702",
+	        "address": "桃園市中壢區中華路一段185號",
+	        "averagePrice": "230元/半隻",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 433 5179",
+	        "address": "桃園市中壢區環中東路561號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 451 0953",
+	        "address": "桃園市中壢區新中北路465號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 433 4878",
+	        "address": "桃園市中壢區普忠路213號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 461 7466",
+	        "address": "桃園市中壢區新中北路1018之1號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "OK便利商店",
+	        "category": "綜合",
+	        "tel": "03 263 9085",
+	        "address": "桃園市中壢區榮民南路186號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "萊爾富便利商店",
+	        "category": "綜合",
+	        "tel": "03 456 2965",
+	        "address": "桃園市中壢區榮民南路301號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 437 8611",
+	        "address": "桃園市中壢區華勛街112號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 436 1613",
+	        "address": "桃園市中壢區華勛街191號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 438 0269",
+	        "address": "桃園市中壢區華美一路132號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 437 8428",
+	        "address": "桃園市中壢區晉元路289巷76號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 463 4283",
+	        "address": "桃園市中壢區新中北路二段179號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 453 6026",
+	        "address": "桃園市中壢區新中北路二段489號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "萊爾富便利商店",
+	        "category": "綜合",
+	        "tel": "03 463 4203",
+	        "address": "桃園市中壢區永福路603號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 461 2156",
+	        "address": "桃園市中壢區榮安十五街27號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 285 0697",
+	        "address": "桃園市中壢區榮安十三街205號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "OK便利商店",
+	        "category": "綜合",
+	        "tel": "03 263 1569",
+	        "address": "桃園市中壢區興仁路二段299號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 435 8772",
+	        "address": "桃園市中壢區興仁路二段63號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 433 2396",
+	        "address": "桃園市中壢區莊敬路900",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 463 2352",
+	        "address": "桃園市中壢區莊敬路805號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "OK便利商店",
+	        "category": "綜合",
+	        "tel": "03 263 1623",
+	        "address": "桃園市中壢區莊敬路779號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 285 3547",
+	        "address": "桃園市中壢區環中東路208號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "OK便利商店",
+	        "category": "綜合",
+	        "tel": "03 263 1613",
+	        "address": "桃園市中壢區環中東路50號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "",
+	        "address": "桃園市中壢區莊敬路838巷莊敬路811巷139 號 320 號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "全家便利商店",
+	        "category": "綜合",
+	        "tel": "03 452 3403",
+	        "address": "桃園市中壢區永強街103號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 463 0877",
+	        "address": "桃園市中壢區榮安十三街283號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 463 6004",
+	        "address": "桃園市中壢區榮安一街293號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 285 4193",
+	        "address": "桃園市中壢區興仁路二段57號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 285 2868",
+	        "address": "桃園市中壢區興安二街1號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    },
+	    {
+	        "name": "7-ELEVEN",
+	        "category": "綜合",
+	        "tel": "03 436 3353",
+	        "address": "桃園市中壢區新中北路151號",
+	        "averagePrice": "",
+	        "photo": "",
+	        "coment": ""
+	    }
 	]
 }
