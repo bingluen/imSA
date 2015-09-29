@@ -78,7 +78,7 @@ var Root = React.createClass({
 	},
 
 	cleanSearch: function(e){
-		e.preventDefault();	
+		e.preventDefault();
 		$('#search-keyword').val("")
 		this.setState({result: this.state.database.data})
 	},
@@ -105,13 +105,13 @@ var SearchResult = React.createClass({
 		]
 
 		category = category.map(function(element) {
-			if(element.tag == 'all') 
+			if(element.tag == 'all')
 				element.data = result;
 			else {
 				element.data = result.filter(function(item) {
 					return item.category == element.name;
 				});
-			}			
+			}
 			return element;
 		}.bind(this))
 		return category;
@@ -161,7 +161,7 @@ var SearchResult = React.createClass({
 					  	</ul>
 					</nav>
 				</div>
-				
+
 				<div className="modal fade" id="myModal_2" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div className="modal-dialog">
 						<div className="modal-content">
@@ -171,10 +171,10 @@ var SearchResult = React.createClass({
 								</h4>
 							</div>
 							<div className="modal-body">
-								<p><span className="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 種類：<span ref="category"></span></p>								
-								<p><span className="glyphicon glyphicon-earphone" aria-hidden="true"></span> 電話：<span ref="tel"></span></p>													
-								<p><span className="glyphicon glyphicon-home" aria-hidden="true"></span> 地址：<span ref="address"></span></p>								
-								<p><span className="glyphicon glyphicon-usd" aria-hidden="true"></span> 價位：<span ref="averagePrice"></span></p>								
+								<p><span className="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 種類：<span ref="category"></span></p>
+								<p><span className="glyphicon glyphicon-earphone" aria-hidden="true"></span> 電話：<span ref="tel"></span></p>
+								<p><span className="glyphicon glyphicon-home" aria-hidden="true"></span> 地址：<span ref="address"></span></p>
+								<p><span className="glyphicon glyphicon-usd" aria-hidden="true"></span> 價位：<span ref="averagePrice"></span></p>
 								<p><span className="glyphicon glyphicon-edit" aria-hidden="true"></span> 備註：</p>
 								<p><span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 地圖：</p>
 								<div id="map" ref="map"></div>
@@ -214,13 +214,13 @@ var SearchResult = React.createClass({
 			dataType: 'json',
 		})
 		.done(function(response) {
-			
+
 			var marker = new google.maps.Marker(
 			{
 				position: google.maps.LatLng(
 					response.results[0].geometry.location.lat,
 					response.results[0].geometry.location.lng
-				), 
+				),
 				title: element.name,
 				map: this.state.map
 			});
@@ -234,7 +234,7 @@ var SearchResult = React.createClass({
 		.fail(function() {
 			console.log("error");
 		});
-		
+
 	},
 	componentDidMount: function() {
 		var state = this.state;
@@ -242,7 +242,10 @@ var SearchResult = React.createClass({
 			zoom: 16,
 			center: {lat: state.location.lat, lng: state.location.lng}
 		});
-        this.setState({map: map});
+    this.setState({map: map});
+		$('#myTab > li').click(function() {
+			this.setState({pages: 1})
+		}.bind(this))
 	}
 })
 
@@ -255,7 +258,7 @@ ResultTable = React.createClass({
 
 	render: function() {
 		var rows = this.props.data.map(function(element,index){
-			return (				
+			return (
 				<tr key={index}>
 					<td><a href="#" onClick={this.handleClick.bind(this, element)}>{element.name}</a></td>
 					<td>{element.category}</td>
@@ -286,7 +289,7 @@ ResultTable = React.createClass({
 		)
 	},
 	componentDidUpdate: function() {
-		this.settingVisible();	
+		this.settingVisible();
 	},
 	componentDidMount: function() {
 		this.settingVisible();
