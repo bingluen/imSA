@@ -1,115 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%; width:100%;">
 <head>
-	<meta charset="UTF-8">
-	<title>imSA</title>
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TEST</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCERvQOuisBHL5Y69TJysRfTDb9wCvTWgc&language=zh-tw" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/react.js"></script>
-	<script src="js/JSXTransformer.js"></script>
-	<script>
-		$(function () {
-		 	$('[data-toggle="tooltip"]').tooltip()
-		})
+	<script type="text/javascript">
+		$(document).ready(function() {
+			initMap();
+		});
+		function initMap() {
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 18,
+		    center: {lat: 24.9696603, lng: 121.2606774}
+		  });
+		}
 	</script>
+	<link rel="stylesheet" href="">
 </head>
-<body>
-
-	<div class="panel panel-default">
-  		<div class="panel-body">
-    		<h1>元智 i 資訊 <small>各種吃喝玩樂的訊息......</small></h1>
-  		</div>
-	</div>
-
-	<form>
-		<div class="form-inline">
-			<input class="form-control" placeholder="請輸入店名...">
-	  		<button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right" type="submit">查詢</button>
-  		</div>
-	</form>
-	
-	<div class="content">
-		<ul class="nav nav-tabs" id="myTab">
-			<li class="active"><a href="#all" data-toggle="tab">全部展開</a></li>
-			<li><a href="#mfood" data-toggle="tab">葷食</a></li>
-			<li><a href="#vfood" data-toggle="tab">素食</a></li>
-			<li><a href="#cloth" data-toggle="tab">衣</a></li>
-			<li><a href="#live" data-toggle="tab">住</a></li>
-			<li><a href="#traffic" data-toggle="tab">行</a></li>
-			<li><a href="#edu" data-toggle="tab">育</a></li>
-			<li><a href="#play" data-toggle="tab">樂</a></li>
-		</ul>
-		<div class="tab-content">
-			<div class="tab-pane fade in active" id="all">
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>店名</th>
-							<th>種類</th>
-							<th>電話</th>
-							<th>地址</th>
-							<th>價位</th>
-						</tr>
-					</thead>
-					<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-		      		<tr>
-			       		<td>內容部份1</td>
-			      		<td>內容部份2</td>
-			      		<td>內容部份3</td>
-			      		<td>內容部份4</td>
-			      		<td>內容部份5</td>
-		      		</tr>
-				</table>
-			</div>
-			<div class="tab-pane  fade" id="mfood"><br></div>
-			<div class="tab-pane  fade" id="vfood"><br></div>
-        	<div class="tab-pane  fade" id="cloth"><br></div>
-			<div class="tab-pane  fade" id="live"><br></div>				  
-			<div class="tab-pane  fade" id="traffic"><br></div>				  
-			<div class="tab-pane  fade" id="edu"><br></div>
-			<div class="tab-pane  fade" id="play"><br></div>
-		</div>	
-	</div>
-
-	<div class="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel"><strong>關於作者</strong></h4>
-				</div>
-				<div class="modal-body">
-					<h4>應芝曦 <small>Jhihsi Ying</small></h4>
-					元智大學 102級資訊管理系學生<br />
-					e-mail: jhihsiying@gmail.com
-				</div>
-				<div class="modal-footer">						    	
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<hr />
-		Copyright &copy; 2015 <a href="#myModal" role="button" data-toggle="modal" id="about-text">Jhihsi Ying</a>, All Rights Reserved.
-	</div>
-
-
+<body style="height:100%; width:100%;">
+	<div id="map" style="height:100%; width:100%;"></div>
 </body>
 </html>

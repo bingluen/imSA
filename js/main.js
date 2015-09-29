@@ -117,7 +117,7 @@ var SearchResult = React.createClass({
 		return category;
 	},
 	getInitialState: function(){
-		return ({pages:1, result: this.classifyResult(this.props.result)});
+		return ({pages:1, result: this.classifyResult(this.props.result), location:{lat: 24.969905, lng:121.266478} });
 	},
 	componentWillReceiveProps: function(nextProps) {
 		this.setState({result: this.classifyResult(nextProps.result)}); //reset tab label to all
@@ -177,6 +177,7 @@ var SearchResult = React.createClass({
 								<p><span className="glyphicon glyphicon-usd" aria-hidden="true"></span> 價位：<span ref="averagePrice"></span></p>								
 								<p><span className="glyphicon glyphicon-edit" aria-hidden="true"></span> 備註：</p>
 								<p><span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 地圖：</p>
+								<div id="map" ref="map"></div>
 							</div>
 							<div className="modal-footer">
 								<button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
@@ -207,7 +208,41 @@ var SearchResult = React.createClass({
 		$(React.findDOMNode(this.refs.tel)).html(element.tel);
 		$(React.findDOMNode(this.refs.address)).html(element.address);
 		$(React.findDOMNode(this.refs.averagePrice)).html(element.averagePrice);
-		$('#myModal_2').modal('show');
+		$.ajax({
+			url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + element.address,
+			type: 'get',
+			dataType: 'json',
+		})
+		.done(function(response) {
+			
+			var marker = new google.maps.Marker(
+			{
+				position: google.maps.LatLng(
+					response.results[0].geometry.location.lat,
+					response.results[0].geometry.location.lng
+				), 
+				title: element.name,
+				map: this.state.map
+			});
+
+			console.log(marker)
+
+			this.state.map.setCenter(marker.getPosition());
+
+			$('#myModal_2').modal('show');
+		}.bind(this))
+		.fail(function() {
+			console.log("error");
+		});
+		
+	},
+	componentDidMount: function() {
+		var state = this.state;
+		var map = new google.maps.Map(React.findDOMNode(this.refs.map), {
+			zoom: 16,
+			center: {lat: state.location.lat, lng: state.location.lng}
+		});
+        this.setState({map: map});
 	}
 })
 
